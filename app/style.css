@@ -1,0 +1,145 @@
+/* DealHunt — original design: deep navy masthead, warm paper background,
+   red discount marks. No web fonts, no images, no framework. */
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f7f3ea;
+  color: #1c2333;
+  line-height: 1.45;
+}
+
+/* Masthead */
+.masthead {
+  background: #14213d;
+  color: #fff;
+  padding: 18px 20px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { display: flex; gap: 12px; align-items: center; }
+.logo {
+  width: 46px; height: 46px;
+  background: #e63946;
+  border-radius: 10px;
+  display: grid; place-items: center;
+  font-weight: 800; font-size: 20px; letter-spacing: 1px;
+}
+.masthead h1 { margin: 0; font-size: 30px; letter-spacing: -0.5px; }
+.tagline { margin: 0; color: #c9d2e3; font-size: 14px; }
+.sale-window { margin: 0; font-size: 13px; color: #ffd166; font-weight: 600; }
+
+/* Controls */
+.controls {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  padding: 14px 20px;
+  background: #fff;
+  border-bottom: 2px solid #14213d;
+  position: sticky; top: 0; z-index: 5;
+}
+.controls label { font-size: 13px; font-weight: 700; display: flex; flex-direction: column; gap: 3px; }
+.controls label:first-child { flex: 1 1 220px; }
+.controls input, .controls select {
+  font: inherit; font-size: 14px;
+  padding: 8px 10px;
+  border: 1.5px solid #b9c0cf; border-radius: 8px;
+  background: #fff; color: #1c2333;
+}
+.controls input:focus, .controls select:focus { outline: 2px solid #e63946; outline-offset: 1px; }
+
+/* Main */
+main { max-width: 1180px; margin: 0 auto; padding: 14px 20px 30px; }
+.stats { font-size: 15px; margin: 4px 0 14px; }
+.stats strong { color: #b3121f; }
+.count { color: #5a6478; font-size: 13px; margin: 0 0 10px; }
+.loading, .empty { font-size: 16px; padding: 30px 0; text-align: center; color: #5a6478; }
+
+/* Compare strip */
+.compare {
+  background: #fff; border: 2px solid #14213d; border-radius: 12px;
+  padding: 14px 16px; margin: 0 0 18px;
+}
+.compare h2 { margin: 0 0 10px; font-size: 17px; }
+.cmp-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cmp-cell {
+  border: 1.5px solid #b9c0cf; border-radius: 10px; padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 2px; position: relative;
+}
+.cmp-cell.cheapest { border-color: #1d7a3d; background: #eef8f0; }
+.cmp-store { font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+.cmp-price { font-size: 26px; font-weight: 800; }
+.cmp-was { color: #5a6478; font-size: 13px; }
+.cmp-cell a { font-size: 14px; font-weight: 700; color: #0b5fff; margin-top: 4px; }
+.cmp-tag {
+  position: absolute; top: -10px; right: 10px;
+  background: #1d7a3d; color: #fff; font-size: 11px; font-weight: 800;
+  padding: 2px 8px; border-radius: 20px; letter-spacing: 0.5px;
+}
+.cmp-note { margin: 10px 0 0; font-size: 14px; }
+
+/* Deal grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: #fff; border: 1.5px solid #d8d2c2; border-radius: 12px;
+  padding: 14px 16px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.card.signal-new-low { border-color: #1d7a3d; box-shadow: 0 0 0 1px #1d7a3d; }
+.card-top { display: flex; justify-content: space-between; gap: 8px; }
+.store { font-weight: 800; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; color: #0b5fff; }
+.cat { font-size: 12px; color: #5a6478; font-weight: 600; }
+.card h3 { margin: 0; font-size: 16px; line-height: 1.3; }
+.prices { margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.sale { font-size: 26px; font-weight: 800; }
+.was { color: #5a6478; text-decoration: line-through; font-size: 15px; }
+.pct {
+  background: #e63946; color: #fff; font-weight: 800; font-size: 14px;
+  padding: 2px 8px; border-radius: 20px;
+}
+.saved { margin: 0; font-size: 14px; font-weight: 700; color: #1d7a3d; }
+.verdict { margin: 0; font-size: 13px; }
+.badge {
+  font-size: 11px; font-weight: 800; letter-spacing: 0.5px;
+  padding: 2px 7px; border-radius: 4px; margin-right: 4px;
+  background: #14213d; color: #fff;
+}
+.signal-new-low .badge { background: #1d7a3d; }
+.signal-strong .badge { background: #b3121f; }
+.signal-routine .badge { background: #6b7280; }
+.evidence { margin: 0; font-size: 13px; color: #3a4358; }
+.checked { margin: 0; font-size: 12px; color: #5a6478; }
+.buy {
+  margin-top: auto; display: inline-block;
+  background: #14213d; color: #fff; text-align: center;
+  font-weight: 700; font-size: 14px; text-decoration: none;
+  padding: 9px 12px; border-radius: 8px;
+}
+.buy:hover { background: #e63946; }
+
+/* Footer */
+footer {
+  max-width: 1180px; margin: 0 auto; padding: 0 20px 30px;
+  font-size: 13px; color: #5a6478;
+}
+footer p { margin: 6px 0; }
+
+/* Phone layout */
+@media (max-width: 640px) {
+  .masthead h1 { font-size: 24px; }
+  .sale-window { width: 100%; }
+  .controls { position: static; padding: 12px 14px; }
+  .controls label { flex: 1 1 45%; }
+  .controls label:first-child { flex-basis: 100%; }
+  main { padding: 10px 14px 24px; }
+  .grid { grid-template-columns: 1fr; }
+  .cmp-row { grid-template-columns: 1fr; }
+  .sale { font-size: 24px; }
+}

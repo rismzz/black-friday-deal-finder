@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHunt — Real Black Friday Deals, Checked 27 Nov 2026</title>
+<meta name="description" content="63 real Black Friday and Cyber Monday deals, each price-checked at its store on 27 Nov 2026, with an honest verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">DH</span>
+    <div>
+      <h1>DealHunt</h1>
+      <p class="tagline">Real Black Friday deals — checked, not copied.</p>
+    </div>
+  </div>
+  <p class="sale-window">Black Friday Week · 19–30 Nov 2026 · Cyber Monday 30 Nov</p>
+</header>
+
+<section class="controls" aria-label="Search and filter deals">
+  <label>Search <input id="q" type="search" placeholder="Try “sony”, “laptop”, “lego”…"></label>
+  <label>Category <select id="cat"></select></label>
+  <label>Store <select id="store"></select></label>
+  <label>Min. discount
+    <select id="min">
+      <option value="0">Any discount</option>
+      <option value="20">20% off or more</option>
+      <option value="30">30% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Sort by
+    <select id="sort">
+      <option value="signal">Best verdict first</option>
+      <option value="discount">Biggest discount %</option>
+      <option value="saving">Most dollars saved</option>
+      <option value="price-asc">Cheapest first</option>
+      <option value="price-desc">Priciest first</option>
+    </select>
+  </label>
+</section>
+
+<main id="app" aria-live="polite">
+  <p class="loading">Loading 63 checked deals…</p>
+</main>
+
+<footer>
+  <p id="checked-at"></p>
+  <p><strong>How we check:</strong> every price was read at the store or in a deals source that names the store on 27 Nov 2026 (see the source line on each deal). Discount % is computed from the two prices shown. <strong>NEW LOW</strong> means a source called it the lowest price ever; <strong>STRONG</strong> is 30%+ off or a big saving; <strong>SOLID</strong> is a real cut; <strong>ROUTINE</strong> is a small cut — still listed, honestly labelled. GPU deals are absent on purpose: no GPU is genuinely discounted in 2026.</p>
+  <p>DealHunt is an independent deal finder. Prices change during Black Friday week — always confirm at the store before you buy. Store links open the product at that store.</p>
+</footer>
+</body>
+</html>
