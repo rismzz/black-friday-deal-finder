@@ -70,8 +70,9 @@ phone layout. No build step, no network loads, vanilla JS/CSS.
   then to be judged in round 1.
 - Bundle: REQUIRED for this competition — parent to bundle (transcripts +
   parent session + system prompt per the kit level-20 rules).
-- commit: 9a222911e24fc2a483dc7f27c3dd5ec301363693 (repo https://github.com/rismzz/black-friday-deal-finder, PUBLIC, About verified)
-- Bundle location: (parent to fill — parent will bundle)
+- commit: 9a222911e24fc2a483dc7f27c3dd5ec301363693 (repo https://github.com/rismzz/black-friday-deal-finder, PUBLIC, About verified) — HEAD final diisi agen utama saat submit
+- Bundle location: ~/workspace/makefun/entries/black-friday-deal-finder-01/transcripts.tar.gz (6,962,263 bytes, sha256 03f0eae6cfc67bf206823d952ced37f01e48117bcafd313771b652abd099fa0f) — 2 sesi (worker 7d18113d + subagent 94e94d48), parent-session agen utama 87f320fc, system prompt uploaded, instructions collected, MCP none, prompt scheduled, 2 usage rows attached. Dibuat dengan kit terbaru (diunduh 27 Nov 13:22 WIB).
+- Kit check: (hasil check dicatat setelah re-bundle final)
 
 ## Unresolved / notes for the main agent
 
