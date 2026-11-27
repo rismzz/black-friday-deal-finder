@@ -70,7 +70,7 @@ phone layout. No build step, no network loads, vanilla JS/CSS.
   then to be judged in round 1.
 - Bundle: REQUIRED for this competition — parent to bundle (transcripts +
   parent session + system prompt per the kit level-20 rules).
-- commit: (parent to fill)
+- commit: 9a222911e24fc2a483dc7f27c3dd5ec301363693 (repo https://github.com/rismzz/black-friday-deal-finder, PUBLIC, About verified)
 - Bundle location: (parent to fill — parent will bundle)
 
 ## Unresolved / notes for the main agent
