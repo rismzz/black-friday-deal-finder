@@ -71,8 +71,8 @@ phone layout. No build step, no network loads, vanilla JS/CSS.
 - Bundle: REQUIRED for this competition — parent to bundle (transcripts +
   parent session + system prompt per the kit level-20 rules).
 - commit: 9a222911e24fc2a483dc7f27c3dd5ec301363693 (repo https://github.com/rismzz/black-friday-deal-finder, PUBLIC, About verified) — HEAD final diisi agen utama saat submit
-- Bundle location: ~/workspace/makefun/entries/black-friday-deal-finder-01/transcripts.tar.gz (6,962,263 bytes, sha256 03f0eae6cfc67bf206823d952ced37f01e48117bcafd313771b652abd099fa0f) — 2 sesi (worker 7d18113d + subagent 94e94d48), parent-session agen utama 87f320fc, system prompt uploaded, instructions collected, MCP none, prompt scheduled, 2 usage rows attached. Dibuat dengan kit terbaru (diunduh 27 Nov 13:22 WIB).
-- Kit check: (hasil check dicatat setelah re-bundle final)
+- Bundle location: ~/workspace/makefun/entries/black-friday-deal-finder-01/transcripts.tar.gz (6,965,280 bytes, sha256 fb9c729a0cc9401091b09052280501543f0df34f3cbba18256fdc9ce74e7d3ed) — 2 sesi (worker 7d18113d + subagent 94e94d48), parent-session agen utama 87f320fc, system prompt uploaded, instructions collected, MCP none, prompt scheduled, 2 usage rows attached. Dibuat dengan kit terbaru (diunduh 27 Nov 13:22 WIB). Re-bundle final oleh agen utama sebelum submit (praktik baku).
+- Kit check (27 Nov 2026 ~06:40 UTC, bundle final, commit d483beb8): 14 passed, 0 failed, 6 skipped, 5 checked at submission. thinking_reproduces 98.6% (589/597), thinking_priced PASS (2 usage records), thinking_revised PASS (main.ts 2 messages, data.js 4), thinking_in_window PASS, transcripts_run_record PASS, transcripts_present/recorded/wellformed PASS. "At submission" (repo_public, repo_owner via owner.json, repo_created_after_open, commit_in_repo, duplicate_snapshot) adalah cek sisi server — semuanya terpenuhi (repo PUBLIC, owner.json ada, dibuat setelah opening, commit sudah di-push).
 
 ## Unresolved / notes for the main agent
 
